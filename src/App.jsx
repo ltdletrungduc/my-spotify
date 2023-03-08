@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
-import './App.css';
+import GlobalStyles from './globalStyles';
 import Sample from "@components/Sample";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div className="App">
+      <GlobalStyles />
       <div>
         <Sample />
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">

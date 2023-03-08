@@ -13,6 +13,7 @@ export default defineConfig({
       "@components": `${path.resolve(__dirname, "./src/components/")}`,
       "@pages": `${path.resolve(__dirname, "./src/pages/")}`,
       "@images": `${path.resolve(__dirname, "./src/assets/images/")}`,
+      "@contants": `${path.resolve(__dirname, "./src/contants/")}`,
     },
   },
 });
