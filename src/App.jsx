@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import GlobalStyles from './globalStyles';
-import Sample from "./components/Sample";
+import ContainerLayout from './components/Container';
 import axios from "axios";
 import MainRoutes from './routes';
 
@@ -71,6 +71,7 @@ function App() {
 
       </div>
       <MainRoutes />
+      <ContainerLayout/>
     </div>
   );
 }
