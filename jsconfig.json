@@ -6,7 +6,9 @@
       "public/*": ["public/*"],
       "components/*": ["src/components/*"],
       "images/*": ["src/assets/images/*"],
-      "contants/*": ["src/contants/*"]
+      "contants/*": ["src/contants/*"],
+      "utils/*": ["src/utils/*"],
+      "redux/*": ["src/redux/*"]
     }
   }
 }
