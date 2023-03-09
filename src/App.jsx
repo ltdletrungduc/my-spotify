@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import GlobalStyles from './globalStyles';
 import Sample from "./components/Sample";
 import axios from "axios";
+import MainRoutes from './routes';
 
 function App() {
   const [ token, setToken ] = useState(null);
@@ -22,10 +23,10 @@ function App() {
   const handleLogout = () => {
     setToken("");
     window.localStorage.removeItem("token");
-  }
+  };
 
   const searchArtists = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const { data } = await axios.get("https://api.spotify.com/v1/search", {
       headers: {
         Authorization: `Bearer ${token}`
@@ -34,10 +35,10 @@ function App() {
         q: searchKey,
         type: "artist"
       }
-    })
+    });
 
-    setArtists(data.artists.items)
-  }
+    setArtists(data.artists.items);
+  };
 
   const renderArtists = () => {
     return artists.map(artist => (
@@ -45,8 +46,8 @@ function App() {
         { artist.images.length ? <img width={ "100%" } src={ artist.images[ 0 ].url } alt="" /> : <div>No Image</div> }
         { artist.name }
       </div>
-    ))
-  }
+    ));
+  };
   return (
     <div className="App">
       <GlobalStyles />
@@ -69,6 +70,7 @@ function App() {
         { renderArtists() }
 
       </div>
+      <MainRoutes />
     </div>
   );
 }
