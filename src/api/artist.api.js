@@ -1,4 +1,4 @@
-import http from "@utils/http";
+import http from "../utils/http";
 
 const URL = "artists";
 
@@ -7,3 +7,5 @@ const artistAPI = {
     return http.get(`${URL}/${id}`);
   },
 };
+
+export default artistAPI;
