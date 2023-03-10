@@ -1,8 +1,10 @@
-const path = {
-  home: "/",
-  login: "/login",
-  register: "/register",
-  user: "/user",
-};
+class Path {
+  constructor() {
+    this.home = "/";
+    this.search = "/search";
+    this.collection = "/collection";
+  }
+}
 
+const path = new Path();
 export default path;
