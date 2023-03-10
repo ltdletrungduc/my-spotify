@@ -9,9 +9,8 @@ function MainRoutes() {
       <Route element={ <MainLayout /> }>
         <Route index element={ <Home /> } />
         <Route path={ path.home } element={ <Home /> } />
-        <Route path={ path.login } element={ <Login /> } />
-        <Route path={ path.register } element={ <Register /> } />
-        <Route path={ path.user } element={ <User /> } />
+        <Route path={ path.search } element={ <Search /> } />
+        <Route path={ path.collection } element={ <Collection /> } />
       </Route>
     </Routes>
   );
@@ -21,16 +20,12 @@ function Home() {
   return <div>HOME</div>;
 }
 
-function Login() {
-  return <div>Login</div>;
+function Search() {
+  return <div>Search</div>;
 }
 
-function Register() {
-  return <div>Register</div>;
-}
-
-function User() {
-  return <div>User</div>;
+function Collection() {
+  return <div>Collection</div>;
 }
 
 export default MainRoutes;
