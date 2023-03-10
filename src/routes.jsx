@@ -7,7 +7,6 @@ function MainRoutes() {
   return (
     <Routes>
       <Route element={ <MainLayout /> }>
-        <Route index element={ <Home /> } />
         <Route path={ path.home } element={ <Home /> } />
         <Route path={ path.search } element={ <Search /> } />
         <Route path={ path.collection } element={ <Collection /> } />
