@@ -2,6 +2,7 @@ import React from "react";
 import path from "./contants/path";
 import { Route, Routes } from "react-router-dom";
 import MainLayout from './layouts/MainLayout';
+import Search from "./pages/Search/Search";
 
 function MainRoutes() {
   return (
@@ -16,13 +17,14 @@ function MainRoutes() {
   );
 }
 
+
 function Home() {
   return <div>HOME</div>;
 }
 
-function Search() {
-  return <div>Search</div>;
-}
+// function Search() {
+//   return <div>Search</div>;
+// }
 
 function Collection() {
   return <div>Collection</div>;
