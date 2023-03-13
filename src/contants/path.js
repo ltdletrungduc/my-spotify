@@ -3,6 +3,8 @@ class Path {
     this.home = "/";
     this.search = "/search";
     this.collection = "/collection";
+    this.likedSongs = this.collection + "/tracks";
+    this.playlist = "/playlist";
   }
 }
 
